@@ -20,6 +20,8 @@ form.addEventListener("submit", (e) => {
   } else {
     // Sinon, afficher le nouveau commentaire
     newComment();
+    // Suppression du contenu des champs
+    deleteFields();
   }
   e.preventDefault();
 });
@@ -59,4 +61,10 @@ function newComment() {
   newH3.appendChild(newTextH3);
   newDiv3.appendChild(newP);
   newP.appendChild(newTextP);
+}
+
+function deleteFields() {
+  firstName.value = "";
+  lastName.value = "";
+  message.value = "";
 }
