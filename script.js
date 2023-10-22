@@ -9,4 +9,6 @@ const commentList = document.getElementById("comment-list");
 
 // Évènements submit
 
-form.addEventListener("submit", () => {});
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+});
