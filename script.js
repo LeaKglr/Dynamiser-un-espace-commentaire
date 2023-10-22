@@ -7,8 +7,19 @@ const message = document.getElementById("message");
 const errorMessage = document.getElementById("error-message");
 const commentList = document.getElementById("comment-list");
 
-// Évènements submit
+// Évènement submit
 
 form.addEventListener("submit", (e) => {
+  if (
+    firstName.value.trim() === "" ||
+    lastName.value.trim() === "" ||
+    message.value.trim() === ""
+  ) {
+    showError(); // Montrer le message d'erreur
+  }
   e.preventDefault();
 });
+
+function showError() {
+  errorMessage.style.display = "block";
+}
