@@ -41,4 +41,13 @@ function newComment() {
   newDiv2.className = "flex-1 py-10";
   newH3.className = "font-medium text-gray-900";
   newDiv3.className = "prose prose-sm mt-4 max-w-none text-gray-500";
+
+  // Créer du texte avec des valeurs déjà existantes
+  const newTextH3 = document.createTextNode(
+    firstName.value.trim() + " " + lastName.value.trim()
+  );
+  const newTextP = document.createTextNode(message.value.trim());
+
+  newH3.innerTextContent = newTextH3;
+  newP.innerTextContent = newTextP;
 }
