@@ -35,4 +35,10 @@ function newComment() {
   const newH3 = document.createElement("h3");
   const newDiv3 = document.createElement("div");
   const newP = document.createElement("p");
+
+  // Récupération du style pour le nouveau commentaire
+  newDiv1.className = "flex space-x-4 text-sm text-gray-500";
+  newDiv2.className = "flex-1 py-10";
+  newH3.className = "font-medium text-gray-900";
+  newDiv3.className = "prose prose-sm mt-4 max-w-none text-gray-500";
 }
