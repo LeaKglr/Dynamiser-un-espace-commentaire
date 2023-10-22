@@ -6,3 +6,7 @@ const lastName = document.getElementById("last-name");
 const message = document.getElementById("message");
 const errorMessage = document.getElementById("error-message");
 const commentList = document.getElementById("comment-list");
+
+// Évènements submit
+
+form.addEventListener("submit", () => {});
