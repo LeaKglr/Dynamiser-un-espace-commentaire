@@ -28,4 +28,11 @@ function showError() {
   errorMessage.style.display = "block";
 }
 
-function newComment() {}
+function newComment() {
+  // Créer de nouveaux élements dans le DOM
+  const newDiv1 = document.createElement("div");
+  const newDiv2 = document.createElement("div");
+  const newH3 = document.createElement("h3");
+  const newDiv3 = document.createElement("div");
+  const newP = document.createElement("p");
+}
