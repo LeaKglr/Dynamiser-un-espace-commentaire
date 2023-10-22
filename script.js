@@ -50,4 +50,13 @@ function newComment() {
 
   newH3.innerTextContent = newTextH3;
   newP.innerTextContent = newTextP;
+
+  // Organisation des éléments du nouveau commentaire
+  commentList.appendChild(newDiv1);
+  newDiv1.appendChild(newDiv2);
+  newDiv2.appendChild(newH3);
+  newDiv2.appendChild(newDiv3);
+  newH3.appendChild(newTextH3);
+  newDiv3.appendChild(newP);
+  newP.appendChild(newTextP);
 }
