@@ -11,11 +11,15 @@ const commentList = document.getElementById("comment-list");
 
 form.addEventListener("submit", (e) => {
   if (
+    // Si un ou plusieurs champs sont vides
     firstName.value.trim() === "" ||
     lastName.value.trim() === "" ||
     message.value.trim() === ""
   ) {
     showError(); // Montrer le message d'erreur
+  } else {
+    // Sinon, afficher le nouveau commentaire
+    newComment();
   }
   e.preventDefault();
 });
@@ -23,3 +27,5 @@ form.addEventListener("submit", (e) => {
 function showError() {
   errorMessage.style.display = "block";
 }
+
+function newComment() {}
